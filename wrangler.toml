@@ -19,3 +19,4 @@ new_sqlite_classes = ["Lobby", "Room"]
 binding = "DB"
 database_name = "NeuroJumponline-api"
 database_id = "a370af22-9e83-4f45-9e13-48d7dd41da22"
+

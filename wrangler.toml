@@ -1,0 +1,21 @@
+name = "neurojump-online"
+main = "online-worker.mjs"
+compatibility_date = "2025-06-01"
+keep_vars = true
+
+[[durable_objects.bindings]]
+name = "LOBBY"
+class_name = "Lobby"
+
+[[durable_objects.bindings]]
+name = "ROOM"
+class_name = "Room"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Lobby", "Room"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "NeuroJumponline-api"
+database_id = "a370af22-9e83-4f45-9e13-48d7dd41da22"
